@@ -126,6 +126,32 @@ POST /check-grammar
 }
 ```
 
+
+## 🌐 Frontend
+
+Simple web interface built with HTML, CSS and JavaScript.
+
+### Structure
+```
+frontend/
+├── index.html      → main page
+├── css/
+│   └── style.css   → styling
+└── js/
+    └── app.js      → API calls and UI logic
+```
+
+### Features
+- Text area for input
+- Character counter (max 1000)
+- Grammar check button
+- Corrected text display
+- Mistakes list with explanations
+- Score card
+- Mistake counter
+- Feedback summary
+
+
 ---
 
 ## ⚠️ Current Limitations
@@ -142,7 +168,6 @@ POST /check-grammar
 - [ ] User authentication
 - [ ] Save mistake history
 - [ ] Track improvement over time
-- [ ] Frontend web interface
 - [ ] Mobile app support
 - [ ] Deploy to cloud
 
