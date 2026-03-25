@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* ─── Header ─── */
+header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header p {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+/* ─── Main Layout ─── */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ─── Left Side ─── */
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 220px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+    font-family: inherit;
+    transition: border 0.3s;
+}
+
+textarea:focus {
+    border-color: #2d6a4f;
+}
+
+.char-count {
+    font-size: 12px;
+    color: #888;
+    text-align: right;
+}
+
+.char-count.warning {
+    color: #e63946;
+}
+
+button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1b4332;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* ─── Results ─── */
+.results {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: none;
+}
+
+.results h3 {
+    margin-bottom: 15px;
+    color: #2d6a4f;
+    font-size: 16px;
+}
+
+.corrected-text {
+    background: #f0fdf4;
+    border-left: 4px solid #2d6a4f;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mistake-item {
+    background: #fff8f0;
+    border-left: 4px solid #f4a261;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.mistake-item .wrong {
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.mistake-item .correct {
+    color: #2d6a4f;
+    font-weight: bold;
+}
+
+.mistake-item .explanation {
+    color: #555;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.no-mistakes {
+    color: #2d6a4f;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* ─── Right Side ─── */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.score-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: none;
+}
+
+.score-card h3 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.score-number {
+    font-size: 52px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+.score-label {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.summary-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: none;
+}
+
+.summary-card h3 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.mistake-count {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: none;
+    text-align: center;
+}
+
+.mistake-count h3 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.mistake-count span {
+    font-size: 42px;
+    font-weight: bold;
+    color: #f4a261;
+}
+
+/* ─── Loading ─── */
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    display: none;
+}
+
+/* ─── Error ─── */
+.error-box {
+    background: #fff0f0;
+    border-left: 4px solid #e63946;
+    padding: 12px 15px;
+    border-radius: 5px;
+    color: #e63946;
+    display: none;
+}

@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from app.schemas import GrammarRequest, GrammarResponse
+from app.schemas import GrammarRequest
 from app.checker import check_grammar
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
@@ -14,6 +15,16 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# ─────────────────────────────────────────
+# CORS — allows frontend to talk to API
+# ─────────────────────────────────────────
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # ─────────────────────────────────────────
