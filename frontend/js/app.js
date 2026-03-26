@@ -1,5 +1,6 @@
 // API URL — change this when deployed!
-const API_URL = "http://127.0.0.1:8000";
+//const API_URL = "http://127.0.0.1:8000"; // Local server
+const API_URL = "https://grammar-guru.onrender.com" // Live server
 
 // ─── Character counter ───
 function updateCharCount() {
