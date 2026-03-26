@@ -244,3 +244,92 @@ button:disabled {
     color: #e63946;
     display: none;
 }
+
+
+/* ─── Responsive Design ─── */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .score-card,
+    .mistake-count,
+    .summary-card {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    textarea {
+        height: 180px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+
+    .score-card,
+    .mistake-count,
+    .summary-card {
+        width: 100%;
+    }
+
+    .score-number {
+        font-size: 40px;
+    }
+
+    .mistake-count span {
+        font-size: 34px;
+    }
+
+    .mistake-item {
+        font-size: 13px;
+    }
+
+    .corrected-text {
+        font-size: 14px;
+    }
+}
