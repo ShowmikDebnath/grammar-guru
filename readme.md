@@ -154,12 +154,36 @@ frontend/
 
 ---
 
+
+## 🌐 Live Demo
+
+- **Frontend:** https://grammar-guru-sd.netlify.app
+- **API:** https://grammar-guru.onrender.com
+- **API Docs:** https://grammar-guru.onrender.com/docs
+
+> ⚠️ First load may take 1-2 minutes while 
+> the free server wakes up!
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Version 1.0.0 — Complete!
+- AI grammar checking
+- Mistake explanations
+- Score system
+- Web frontend
+- Live deployment
+
+
+
+
 ## ⚠️ Current Limitations
 
 - Maximum 1000 characters per request
 - No user accounts or history yet
-- API only — no frontend yet
 - Free tier API limits apply
+- First load may take 1-2 minutes while
 
 ---
 
